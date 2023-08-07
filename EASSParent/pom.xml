@@ -1,0 +1,72 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.hsuforum.EASSParent</groupId>
+	<artifactId>EASSParent</artifactId>
+	<version>3.0.3</version>
+	<packaging>pom</packaging>
+	<modules>
+		<module>EASSCore</module>
+	</modules>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.1.2</version>
+		<relativePath />
+	</parent>
+	<pluginRepositories>
+
+		<pluginRepository>
+			<id>central</id>
+			<name>Maven central repository</name>
+			<url>https://repo1.maven.org/maven2/</url>
+			<layout>default</layout>
+		</pluginRepository>
+
+		<pluginRepository>
+			<id>jboss</id>
+			<name>JBoss Repository</name>
+			<url>https://repository.jboss.org/nexus/content/groups/public/</url>
+			<layout>default</layout>
+		</pluginRepository>
+		<pluginRepository>
+			<id>prime-repo</id>
+			<name>PrimeFaces Maven Repository</name>
+			<url>http://repository.primefaces.org/</url>
+			<layout>default</layout>
+		</pluginRepository>
+		<pluginRepository>
+			<id>spring-release</id>
+			<name>release</name>
+			<url>https://repo.spring.io/release</url>
+		</pluginRepository>
+
+	</pluginRepositories>
+	<repositories>
+		<repository>
+			<id>central</id>
+			<name>Maven central repository</name>
+			<layout>default</layout>
+			<url>https://repo.maven.apache.org/maven2/</url>
+		</repository>
+		<repository>
+			<id>jboss</id>
+			<name>JBoss Repository</name>
+			<layout>default</layout>
+			<url>https://repository.jboss.org/nexus/content/groups/public/</url>
+		</repository>
+		<repository>
+			<id>prime-repo</id>
+			<name>PrimeFaces Maven Repository</name>
+			<url>http://repository.primefaces.org/</url>
+			<layout>default</layout>
+		</repository>
+		<repository>
+			<id>spring-release</id>
+			<name>release</name>
+			<url>https://repo.spring.io/release</url>
+		</repository>
+
+	</repositories>
+</project>
