@@ -6,7 +6,6 @@ import com.hsuforum.common.entity.SystemDateOperation;
 import com.hsuforum.common.entity.impl.BaseEntityImpl;
 import com.hsuforum.common.entity.impl.SystemDateEntityListener;
 
-import jakarta.persistence.Basic;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EntityListeners;
@@ -45,9 +44,11 @@ public class JobExecuteLog extends BaseEntityImpl<String> implements SystemDateO
 	@JoinColumn(name = "TB_JOB_EXECUTE_STATUS_ID")
 	private JobExecuteStatus jobExecuteStatus;
 	// bi-directional many-to-one association to Function
+	@EqualsAndHashCode.Include()
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "TB_JOBS_ID")
 	private Job job;
+
 	
 	
 	

@@ -6,7 +6,6 @@ import com.hsuforum.common.entity.SystemDateOperation;
 import com.hsuforum.common.entity.impl.BaseEntityImpl;
 import com.hsuforum.common.entity.impl.SystemDateEntityListener;
 
-import jakarta.persistence.Basic;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EntityListeners;
@@ -38,6 +37,7 @@ public class Job extends BaseEntityImpl<String> implements SystemDateOperation {
 	@Column(name = "ID", nullable = false)
 	@EqualsAndHashCode.Include()
 	private String id;
+	@EqualsAndHashCode.Include()
 	@Column(name = "CODE", nullable = false, length = 20)
 	private String code;
 	@Column(name = "NAME", nullable = false)
@@ -52,6 +52,7 @@ public class Job extends BaseEntityImpl<String> implements SystemDateOperation {
 	@Temporal(TemporalType.TIMESTAMP)
 	@Column(name = "UPDATE_DATE")
 	private Date updateDate;
+	@EqualsAndHashCode.Include()
 	// bi-directional many-to-one association to Function
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "TB_JOB_SYSTEMS_ID")
