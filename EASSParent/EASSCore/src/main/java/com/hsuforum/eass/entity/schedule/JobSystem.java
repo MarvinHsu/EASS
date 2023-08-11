@@ -24,6 +24,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class JobSystem  extends BaseEntityImpl<String> {
 	public static JobSystem EAS = new JobSystem("10000008-0000-0000-0000-000000000001", "Enterprise Application Stack", "EAS");
+	public static JobSystem EASJavaJSFTemplate = new JobSystem("10000008-0000-0000-0000-0000000000021", "Java JSF Template System", "EASJavaJSFTemplate");
 	private static final long serialVersionUID = 1L;
 	@Id
 	@Column(name = "ID", unique = true, nullable = false, length = 36)

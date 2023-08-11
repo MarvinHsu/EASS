@@ -31,8 +31,11 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Job extends BaseEntityImpl<String> implements SystemDateOperation {
 	private static final long serialVersionUID = 1L;
-	public static Job SampleCornJob= new Job("10000010-0000-0000-0000-000000000001", "SampleCornJob", "SampleCornJob", "com.hsuforum.eas.job.SampleCornJob", "sampleCornJobDetail", new Date(), null, JobSystem.EAS);
-	public static Job SampleJob= new Job("10000010-0000-0000-0000-000000000002", "SampleJob", "SampleJob", "com.hsuforum.eas.job.SampleJob", "sampleJobDetail", new Date(), null, JobSystem.EAS);
+	public static Job SampleCornJob_EAS= new Job("10000010-0000-0000-0000-000000000001", "SampleCornJob", "SampleCornJob", "com.hsuforum.eas.job.SampleCornJob", "sampleCornJobDetail", new Date(), null, JobSystem.EAS);
+	public static Job SampleJob_EAS= new Job("10000010-0000-0000-0000-000000000002", "SampleJob", "SampleJob", "com.hsuforum.eas.job.SampleJob", "sampleJobDetail", new Date(), null, JobSystem.EAS);
+	public static Job SampleCornJob_EASJavaJSFTemplate= new Job("10000010-0000-0000-0000-000000000003", "SampleCornJob", "SampleCornJob", "com.hsuforum.easjavatemplate.job.SampleCornJob", "sampleCornJobDetail", new Date(), null, JobSystem.EASJavaJSFTemplate);
+	public static Job SampleJob_EASJavaJSFTemplate= new Job("10000010-0000-0000-0000-000000000004", "SampleJob", "SampleJob", "com.hsuforum.easjavatemplate.job.SampleJob", "sampleJobDetail", new Date(), null, JobSystem.EASJavaJSFTemplate);
+	
 	@Id
 	@Column(name = "ID", nullable = false)
 	@EqualsAndHashCode.Include()
