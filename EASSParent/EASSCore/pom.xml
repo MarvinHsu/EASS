@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>com.hsuforum.EASSParent</groupId>
 		<artifactId>EASSParent</artifactId>
-		<version>3.1.0</version>
+		<version>3.1.1</version>
 	</parent>
 	<artifactId>EASSCore</artifactId>
 	<packaging>jar</packaging>
