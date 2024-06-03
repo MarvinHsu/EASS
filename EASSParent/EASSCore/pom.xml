@@ -5,13 +5,13 @@
 	<parent>
 		<groupId>com.hsuforum.EASSParent</groupId>
 		<artifactId>EASSParent</artifactId>
-		<version>3.1.1</version>
+		<version>3.2.0</version>
 	</parent>
 	<artifactId>EASSCore</artifactId>
 	<packaging>jar</packaging>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<hsucommon.version>4.1.1</hsucommon.version>
+		<hsucommon.version>4.2.0</hsucommon.version>
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
