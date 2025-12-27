@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.hsuforum.EASSParent</groupId>
 	<artifactId>EASSParent</artifactId>
-	<version>4.0.0</version>
+	<version>4.0.1</version>
 	<packaging>pom</packaging>
 	<modules>
 		<module>EASSCore</module>
@@ -12,7 +12,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>4.0.0</version>
+		<version>4.0.1</version>
 		<relativePath />
 	</parent>
 	<pluginRepositories>
