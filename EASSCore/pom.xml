@@ -11,23 +11,15 @@
 	<packaging>jar</packaging>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<hsucommon.version>5.0.2</hsucommon.version>
+		<hsucommon.version>5.1.0</hsucommon.version>
 		<maven.compiler.source>21</maven.compiler.source>
 		<maven.compiler.target>21</maven.compiler.target>
 		<maven.compiler.release>21</maven.compiler.release>
 	</properties>
 	<dependencies>
 		<dependency>
-			<groupId>com.hsuforum.HSUCommonParent</groupId>
-			<artifactId>CommonEntity</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.hsuforum.HSUCommonParent</groupId>
-			<artifactId>CommonDao</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.hsuforum.HSUCommonParent</groupId>
-			<artifactId>CommonService</artifactId>
+			<groupId>com.hsuforum</groupId>
+			<artifactId>HSUCommon</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -107,27 +99,10 @@
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
-				<groupId>com.hsuforum.HSUCommonParent</groupId>
-				<artifactId>CommonEntity</artifactId>
+				<groupId>com.hsuforum</groupId>
+				<artifactId>HSUCommon</artifactId>
 				<version>${hsucommon.version}</version>
 			</dependency>
-			<dependency>
-				<groupId>com.hsuforum.HSUCommonParent</groupId>
-				<artifactId>CommonDao</artifactId>
-				<version>${hsucommon.version}</version>
-			</dependency>
-
-			<dependency>
-				<groupId>com.hsuforum.HSUCommonParent</groupId>
-				<artifactId>CommonService</artifactId>
-				<version>${hsucommon.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.hsuforum.HSUCommonParent</groupId>
-				<artifactId>CommonWeb</artifactId>
-				<version>${hsucommon.version}</version>
-			</dependency>
-
 		</dependencies>
 	</dependencyManagement>
 	<build>
