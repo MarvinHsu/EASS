@@ -5,13 +5,13 @@
 	<parent>
 		<groupId>com.hsuforum</groupId>
 		<artifactId>EASSParent</artifactId>
-		<version>4.1.0</version>
+		<version>4.1.1</version>
 	</parent>
 	<artifactId>EASSCore</artifactId>
 	<packaging>jar</packaging>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<hsucommon.version>5.1.0</hsucommon.version>
+		<hsucommon.version>5.1.1</hsucommon.version>
 		<maven.compiler.source>21</maven.compiler.source>
 		<maven.compiler.target>21</maven.compiler.target>
 		<maven.compiler.release>21</maven.compiler.release>
